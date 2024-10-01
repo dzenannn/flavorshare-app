@@ -10,7 +10,8 @@ html {
 
 body {
   margin: 0;
-  background: radial-gradient(#282c34, #282c34);
+  background: linear-gradient(#000000, #2b2b2b);
+  background-attachment: fixed;
 }
 
 .header-background {

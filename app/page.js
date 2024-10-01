@@ -6,17 +6,11 @@ export default function Home() {
       <h1 style={{ color: "#000", textAlign: "center" }}>
         Time to get started !
         <p>
-          <a>
-            <Link href={"/meals"}>Meals</Link>
-          </a>
+          <Link href={"/meals"}>Meals</Link>
           <br />
-          <a>
-            <Link href={"/meals/share"}>Share Meal</Link>
-          </a>
+          <Link href={"/meals/share"}>Share Meal</Link>
           <br />
-          <a>
-            <Link href={"/community"}>Community</Link>
-          </a>
+          <Link href={"/community"}>Community</Link>
         </p>
       </h1>
     </main>
