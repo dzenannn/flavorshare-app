@@ -6,6 +6,7 @@ import logo from "@/assets/logo.png";
 import classes from "./main-header.module.css";
 
 export default function MainHeader() {
+  console.log("execution");
   return (
     <>
       <MainHeaderBackground />

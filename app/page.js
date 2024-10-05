@@ -1,18 +1,53 @@
+//! Sve komponente se izvršavaju na strani servera (server-side rendering)
 import Link from "next/link";
+import classes from "./page.module.css";
+import ImageSlideshow from "./components/images/image-slideshow";
 
 export default function Home() {
   return (
-    <main>
-      <h1 style={{ color: "#000", textAlign: "center" }}>
-        Time to get started !
-        <p>
-          <Link href={"/meals"}>Meals</Link>
-          <br />
-          <Link href={"/meals/share"}>Share Meal</Link>
-          <br />
-          <Link href={"/community"}>Community</Link>
-        </p>
-      </h1>
-    </main>
+    <>
+      <header className={classes.header}>
+        <div className={classes.slideshow}>
+          <ImageSlideshow />
+        </div>
+        <div>
+          <div className={classes.hero}>
+            <h1>FlavorShare foodies</h1>
+            <p>Taste & share food from all over the world.</p>
+          </div>
+          <div className={classes.cta}>
+            <Link href="/community">Join the Community</Link>
+            <Link href="/meals">Explore Meals</Link>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section className={classes.section}>
+          <h2>How it works</h2>
+          <p>
+            FlavorShare is a platform for foodies to share their favorite
+            recipes with the world. It&apos;s a place to discover new dishes,
+            and to connect with other food lovers.
+          </p>
+          <p>
+            FlavorShare is a place to discover new dishes, and to connect with
+            other food lovers.
+          </p>
+        </section>
+
+        <section className={classes.section}>
+          <h2>Why FlavorShare?</h2>
+          <p>
+            FlavorShare is a platform for foodies to share their favorite
+            recipes with the world. It&apos;s a place to discover new dishes,
+            and to connect with other food lovers.
+          </p>
+          <p>
+            FlavorShare is a place to discover new dishes, and to connect with
+            other food lovers.
+          </p>
+        </section>
+      </main>
+    </>
   );
 }
