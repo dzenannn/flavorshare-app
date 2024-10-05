@@ -24,7 +24,7 @@
   font-family: "Montserrat", sans-serif;
   letter-spacing: 0.15rem;
   text-transform: uppercase;
-  background: linear-gradient(90deg, #f9572a, #ffc905);
+  background: linear-gradient(10deg, #1cd8ff, #a7c833);
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -41,34 +41,34 @@
   margin-top: 0.5rem;
   padding: 0.5rem 1rem;
   border-radius: 8px;
-  background: linear-gradient(90deg, #f9572a, #ff9b05);
-  color: #ffffff;
+  background: linear-gradient(90deg, #1cd8ff, #a7c833);
+  color: #313131;
   font-weight: bold;
   text-decoration: none;
 }
 
 .cta a:hover,
 .cta a:active {
-  background: linear-gradient(90deg, #fd4715, #f9b241);
+  background: linear-gradient(90deg, #49e1ff, #c8ff00);
+  color: #000000;
 }
 
 .cta a:first-child {
   background: transparent;
   font-weight: normal;
-  color: #ff9b05;
+  color: #21c0c0;
   padding-left: 0;
 }
 
 .cta a:first-child:hover,
 .cta a:first-child:active {
-  background: transparent;
-  color: #f9b241;
+  color: #177e7e;
 }
 
 .section {
   display: flex;
   flex-direction: column;
-  color: #ddd6cb;
+  color: #ddd6cb; /* //! UMESTO BELE */
   font-size: 1.5rem;
   max-width: 50rem;
   width: 90%;

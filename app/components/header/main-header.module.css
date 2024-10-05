@@ -30,8 +30,7 @@
 
 .nav a:hover,
 .nav a:active {
-  text-shadow: 0 0 8px rgba(0, 0, 0, 1);
-  backdrop-filter: blur(4px);
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.725);
 }
 
 .active {
@@ -59,5 +58,5 @@
   width: 5rem;
   height: 5rem;
   object-fit: contain;
-  filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.75));
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3));
 }
