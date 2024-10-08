@@ -1,0 +1,15 @@
+.link {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+  padding: 0.5rem 1rem;
+}
+
+.link:hover,
+.link:active {
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.725);
+}
+
+.link.active {
+  text-shadow: 0 0 8px black;
+}

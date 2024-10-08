@@ -21,25 +21,6 @@
   font-size: 1.25rem;
 }
 
-.nav a {
-  text-decoration: none;
-  color: #000;
-  font-weight: bold;
-  padding: 0.5rem 1rem;
-}
-
-.nav a:hover,
-.nav a:active {
-  text-shadow: 0 0 10px rgba(0, 0, 0, 0.725);
-}
-
-.active {
-  background: linear-gradient(90deg, #ffffff, #00fc00);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
 .logo {
   display: flex;
   align-items: center;
