@@ -5,12 +5,17 @@ import communityIcon from "@/assets/icons/community.png";
 import eventsIcon from "@/assets/icons/events.png";
 import classes from "./page.module.css";
 
+import TypingEffect from "../components/typing-effect/typing-effect";
+
 export default function CommunityPage() {
   return (
     <>
       <header className={classes.header}>
         <h1>
-          One shared passion: <span className={classes.highlight}>Food</span>
+          One shared passion:
+          <span className={classes.highlight}>
+            <TypingEffect />
+          </span>
         </h1>
         <p>Join our community and share your favorite recipes!</p>
       </header>
