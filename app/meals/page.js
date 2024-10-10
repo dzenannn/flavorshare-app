@@ -2,8 +2,11 @@ import Link from "next/link";
 import classes from "./page.module.css";
 import MealsGrid from "../components/meals/meals-grid";
 import pizzaImg from "../../public/images/pizza.jpg";
+import { getMeals } from "@/lib/meals";
 
-export default function MealsPage() {
+export default async function MealsPage() {
+  const meals = await getMeals();
+
   return (
     <>
       <header className={classes.header}>
@@ -19,37 +22,7 @@ export default function MealsPage() {
         </p>
       </header>
       <main className={classes.main}>
-        <MealsGrid
-          meals={[
-            {
-              id: "meal1",
-              title: "Delicious Pizza",
-              slug: "delicious-pizza",
-              image: pizzaImg,
-              summary:
-                "A mouthwatering pasta dish with rich tomato sauce and fresh herbs.",
-              creator: "Chef Antonio",
-            },
-            {
-              id: "meal2",
-              title: "Burger ",
-              slug: "delicious-Burger",
-              image: "/images/burger.jpg",
-              summary:
-                "A mouthwatering pasta dish with rich tomato sauce and fresh herbs.",
-              creator: "Chef Antonio",
-            },
-            {
-              id: "meal1",
-              title: "Delicious Schnitzel",
-              slug: "delicious-schnitzel",
-              image: "/images/schnitzel.jpg",
-              summary:
-                "A mouthwatering pasta dish with rich tomato sauce and fresh herbs.",
-              creator: "Chef Antonio",
-            },
-          ]}
-        />
+        <MealsGrid meals={meals} />
       </main>
     </>
   );
