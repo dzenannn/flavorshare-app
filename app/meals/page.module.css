@@ -40,12 +40,12 @@
 
 @keyframes loading {
   0% {
-    color: #e9e9e9;
+    color: #dfdfdf;
   }
   50% {
-    color: #b89b84;
+    color: #85b672;
   }
   100% {
-    color: #e9e9e9;
+    color: #dfdfdf;
   }
 }

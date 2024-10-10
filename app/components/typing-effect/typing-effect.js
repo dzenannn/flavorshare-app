@@ -18,7 +18,7 @@ const TypingEffect = () => {
     }
   }, [index]);
 
-  return <>{text}</>;
+  return text;
 };
 
 export default TypingEffect;
