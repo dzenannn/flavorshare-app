@@ -20,12 +20,16 @@ body {
   text-align: center;
 }
 
-.not-found h3,
-.error h3 {
-  font-size: 3rem;
+.not-found h1,
+.error h1 {
+  font-size: 4rem;
   margin: 0px;
   font-weight: 900;
   color: #ddd8d8;
+  background: linear-gradient(90deg, #49e1ff, #c8ff00);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-transform: uppercase;
   font-family: "Montserrat", sans-serif;
 }
