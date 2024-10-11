@@ -5,7 +5,7 @@ import communityIcon from "@/assets/icons/community.png";
 import eventsIcon from "@/assets/icons/events.png";
 import classes from "./page.module.css";
 
-import TypingEffect from "../components/typing-effect/typing-effect";
+import TypingEffect from "../../components/typing-effect/typing-effect";
 
 export default function CommunityPage() {
   return (

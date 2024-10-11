@@ -60,11 +60,6 @@
   padding-left: 0;
 }
 
-.cta a:first-child:hover,
-.cta a:first-child:active {
-  color: #177e7e;
-}
-
 .section {
   display: flex;
   flex-direction: column;

@@ -12,7 +12,7 @@ const TypingEffect = () => {
       const timeout = setTimeout(() => {
         setText((prevText) => prevText + fullText.charAt(index));
         setIndex(index + 1);
-      }, 500);
+      }, 350);
 
       return () => clearTimeout(timeout);
     }

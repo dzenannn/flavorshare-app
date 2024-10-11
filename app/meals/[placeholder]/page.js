@@ -1,10 +1,13 @@
 import Image from "next/image";
 import classes from "./page.module.css";
 import { getMeal } from "@/lib/meals";
+import { notFound } from "next/navigation";
 
 export default function MealDetailsPage({ params }) {
   const meal = getMeal(params.placeholder); // getting single meal based on url parameters
-  meal.instructions = meal.instructions.replace(/\n/g, "<br />"); // text-formatting
+  if (meal) meal.instructions = meal.instructions.replace(/\n/g, "<br />"); // text-formatting
+  if (!meal) notFound();
+
   return (
     <>
       <header className={classes.header}>
@@ -19,7 +22,6 @@ export default function MealDetailsPage({ params }) {
           <p className={classes.summary}>{meal.summary}</p>
         </div>
       </header>
-
       <main>
         <p
           className={classes.instructions}
