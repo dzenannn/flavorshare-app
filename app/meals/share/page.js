@@ -3,7 +3,7 @@
 import ImagePicker from "@/components/meals/image-picker";
 import classes from "./page.module.css";
 
-import submitMeal from "@/lib/action";
+import submitMeal from "@/lib/actions";
 
 export default function ShareMealPage() {
   return (
