@@ -3,6 +3,16 @@ import classes from "./page.module.css";
 import { getMeal } from "@/lib/meals";
 import { notFound } from "next/navigation";
 
+export async function generateMetadata({ params }) {
+  const meal = getMeal(params.placeholder);
+  if (!meal) notFound();
+
+  return {
+    title: meal.title,
+    description: meal.summary,
+  };
+}
+
 export default function MealDetailsPage({ params }) {
   const meal = getMeal(params.placeholder); // getting single meal based on url parameters
   if (meal) meal.instructions = meal.instructions.replace(/\n/g, "<br />"); // text-formatting
