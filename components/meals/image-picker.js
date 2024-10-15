@@ -7,9 +7,7 @@ export default function ImagePicker({ label, name }) {
   const [pickedImage, setPickedImage] = useState();
   const imageInput = useRef();
 
-  function handleClick() {
-    imageInput.current.click();
-  }
+  const handleClick = () => imageInput.current.click();
 
   function handleImageChange(e) {
     const file = e.target.files[0];
